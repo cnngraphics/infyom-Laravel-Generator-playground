@@ -34,3 +34,14 @@ Route::post(
     'generator_builder/generate-from-file',
     '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@generateFromFile'
 )->name('io_generator_builder_generate_from_file');
+
+Route::resource('users', 'usersController');
+
+
+
+Route::post('call-command', function(){
+    Artisan::call('command:ShowMessage');
+});
+
+
+Route::post('command', 'WelcomeController@index');

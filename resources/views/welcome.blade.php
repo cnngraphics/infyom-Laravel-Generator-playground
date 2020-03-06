@@ -94,6 +94,11 @@
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+
+                <form action="command" method="POST">
+                    @csrf
+                    <Button>Call Command Show Message</Button>
+                </form>
             </div>
         </div>
     </body>
